@@ -5,7 +5,7 @@ export const Aside = ()=>{
     return(
         <aside className="flex gap-3">
             <Search />
-            <IconUser />
+             <IconUser /> 
         </aside>
     )
 }

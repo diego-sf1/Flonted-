@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ButtonEnlace } from "./components/Atoms/button";
 
-
 export default function Home() {
   return (
    <main>
