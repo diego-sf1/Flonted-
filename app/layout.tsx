@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Organisms/header";
 import { Footer } from "./components/Organisms/footer";
 
 const inter = Inter({ subsets: ["latin"] });
+//const Monserrat = Montserrat({weight:['300','400','700']})
+const montserrat = Montserrat({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display:'swap',
+  fallback: ['Arial', 'sans-serif'],
+});
+
 
 export const metadata: Metadata = {
   title: "Mi emisora",
@@ -18,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
         {children}
         <Footer />

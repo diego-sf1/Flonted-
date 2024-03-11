@@ -3,10 +3,12 @@ import Link from "next/link";
 interface enlace{
     href: string,
     label: string
+    margin: string
 }
 
-export const Enlace = ({href, label}: enlace)=>{
+export const Enlace = ({href, label, margin}: enlace)=>{
+    const marginRigth = margin ? `mr-${margin}` : '';
     return(
-        <Link href={href} className="mb-5 text-white mr-2 text-base font-medium hover:text-red-600 transition-all">{label}</Link>
+        <Link href={href} className={`text-white text-base font-semibold hover:text-red-600 transition-all ${marginRigth}`}>{label}</Link>
     )
 }

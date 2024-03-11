@@ -10,3 +10,28 @@
 figure.cover{
     background-color: #24242466;
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width: 960px) and (max-width: 1024px) {
+    html {
+      font-size: 13px;
+    }
+    .container {
+      max-width: 1024px !important;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    html {
+      font-size: 11px;
+    }
+    body {
+      height: 100vh;
+    }
+    .container {
+      max-width: 959px !important;
+    }
+  }
