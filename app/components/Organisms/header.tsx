@@ -10,11 +10,7 @@ export const Header = ()=>{
     
     return(
        
-<<<<<<< HEAD
         <header className="bg-[#041925] p-5 relative z-10">
-=======
-        <header className="bg-[#041925] p-2">
->>>>>>> 4acf0b84d3a5783b3f59eb02292671cfa9c7abf2
             <div className="container mx-auto flex justify-between md:justify-start items-center h-[96px]">
                 <Nav />
                 <figure>

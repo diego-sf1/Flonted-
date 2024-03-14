@@ -3,7 +3,7 @@ import Link from "next/link";
 interface enlace{
     href: string,
     label: string,
-    margin: string
+    margin?: string
 }
 
 export const ButtonEnlace =({href, label, margin}: enlace)=>{
@@ -15,6 +15,6 @@ export const ButtonEnlace =({href, label, margin}: enlace)=>{
 export const ButtonEnlaceRound =({href, label, margin }: enlace)=>{
     const marginRigth = margin ? `mr-${margin}` : '';
     return(
-        <a href={href} className={`w-[85%] text-center hover:bg-red-600 bg-red-500 text-white  rounded-full py-2 px-4 border-solid border-2 mx-auto block ${marginRigth}`}>{label}</a>
+        <a href={href} className={`w-[95%] mb-8 text-center hover:bg-red-600 bg-red-500 text-white  rounded-full py-2 px-4 border-solid border-2 mx-auto block ${marginRigth}`}>{label}</a>
     )
 }
