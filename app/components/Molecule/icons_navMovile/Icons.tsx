@@ -29,7 +29,7 @@ export const IconInicio = () => {
   );
 };
 
-export const IconPremiun = (props) => {
+export const IconPremiun = () => {
   return (
     <span>
       <svg

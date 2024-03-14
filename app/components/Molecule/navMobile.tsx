@@ -4,7 +4,21 @@ import { Enlace } from "../Atoms/enlace";
 import clsx from "clsx";
 import { Close } from "../Atoms/close";
 import { ButtonEnlace, ButtonEnlaceRound } from "../Atoms/button";
-import { IconInicio,IconPremiun,IconBusqueda,IconEstaVivo,IconOndeman,IconGrupoDs,IconMusica,IconDeportes,IconNoti,IconPodcast } from "./icons_navMovile/Icons";
+import {
+  IconInicio,
+  IconPremiun,
+  IconBusqueda,
+  IconEstaVivo,
+  IconOndeman,
+  IconGrupoDs,
+  IconMusica,
+  IconDeportes,
+  IconNoti,
+  IconPodcast,
+} from "./icons_navMovile/Icons";
+
+
+import { IconnIniSesi,IconRegistrarse } from "./icons_navMovile/IconsButtons";
 
 export const Nav = () => {
   const [isActive, setIscative] = useState(false);
@@ -52,21 +66,36 @@ export const Nav = () => {
         </figure>
         <ButtonEnlaceRound href="#" label="Iniciar prueba gratuita " />
         <br></br>
-        <Enlace href="#" label="Inicio"  icon={<IconInicio />} margin="" />
-        <Enlace href="#" label="Premium" icon={<IconPremiun/>} margin="" />
-        <Enlace href="#" label="Busqueda"icon={<IconBusqueda/>} margin="" />
-        <Enlace href="#" label="Estaciones en vivo" icon={<IconEstaVivo/>} margin="" />
-        <Enlace href="#" label=" Ondemand" icon={<IconOndeman/>} margin="" />
-        <Enlace href="#" label="Grupo DS Radio" icon={<IconGrupoDs/>} margin="" />
-        <Enlace href="#" label="Música" icon={<IconMusica/>} margin="" />
-        <Enlace href="#" label="Deportes" icon={<IconDeportes/>} margin="" />
-        <Enlace href="#" label="Noticias y Hablada" icon={<IconNoti/>} margin="" />
-        <Enlace href="#" label="Podcast" icon={<IconPodcast/>} margin="" />
+        <Enlace href="#" label="Inicio" icon={<IconInicio />} margin="" />
+        <Enlace href="#" label="Premium" icon={<IconPremiun />} margin="" />
+        <Enlace href="#" label="Busqueda" icon={<IconBusqueda />} margin="" />
+        <Enlace
+          href="#"
+          label="Estaciones en vivo"
+          icon={<IconEstaVivo />}
+          margin=""
+        />
+        <Enlace href="#" label=" Ondemand" icon={<IconOndeman />} margin="" />
+        <Enlace
+          href="#"
+          label="Grupo DS Radio"
+          icon={<IconGrupoDs />}
+          margin=""
+        />
+        <Enlace href="#" label="Música" icon={<IconMusica />} margin="" />
+        <Enlace href="#" label="Deportes" icon={<IconDeportes />} margin="" />
+        <Enlace
+          href="#"
+          label="Noticias y Hablada"
+          icon={<IconNoti />}
+          margin=""
+        />
+        <Enlace href="#" label="Podcast" icon={<IconPodcast />} margin="" />
         <br />
         <br />
         <div className="buttons">
-          <ButtonEnlaceRound href="#" label="INICIAR SESION" />
-          <ButtonEnlaceRound href="#" label="REGISTRARSE" />
+          <ButtonEnlaceRound href="#" icon={<IconnIniSesi/>} label="INICIAR SESION" />
+          <ButtonEnlaceRound href="#" icon={<IconRegistrarse/>} label="REGISTRARSE" />
         </div>
       </nav>
     </>

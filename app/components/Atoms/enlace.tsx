@@ -1,4 +1,3 @@
-// Enlace.tsx
 import Link from "next/link";
 
 interface EnlaceProps {
