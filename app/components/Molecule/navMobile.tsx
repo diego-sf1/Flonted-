@@ -62,7 +62,7 @@ export const Nav = () => {
           </span>
         </div>
         <figure>
-          <img src="./logo.png" alt="" className="pb-6 ml-8" />
+          <img src="./logo.png" alt="" className="pb-6 mx-auto " />
         </figure>
         <ButtonEnlaceRound href="#" label="Iniciar prueba gratuita " />
         <br></br>
